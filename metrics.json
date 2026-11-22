@@ -1,0 +1,118 @@
+{
+  "documents": 2000,
+  "train": 1600,
+  "test": 400,
+  "seed": 42,
+  "models": {
+    "vader_baseline": {
+      "accuracy": 0.645,
+      "macro_f1": 0.6331,
+      "confusion_matrix": [
+        [
+          93,
+          107
+        ],
+        [
+          35,
+          165
+        ]
+      ]
+    },
+    "tfidf_logreg": {
+      "accuracy": 0.845,
+      "macro_f1": 0.8449,
+      "confusion_matrix": [
+        [
+          164,
+          36
+        ],
+        [
+          26,
+          174
+        ]
+      ],
+      "cv_accuracy_mean": 0.858,
+      "cv_accuracy_std": 0.0151
+    },
+    "word2vec_logreg": {
+      "accuracy": 0.8075,
+      "macro_f1": 0.8066,
+      "confusion_matrix": [
+        [
+          148,
+          52
+        ],
+        [
+          25,
+          175
+        ]
+      ],
+      "cv_accuracy_mean": 0.7685,
+      "cv_accuracy_std": 0.0278
+    }
+  },
+  "top_terms": {
+    "negative": [
+      "bad",
+      "wast",
+      "bore",
+      "worst",
+      "suppos",
+      "noth",
+      "poor",
+      "stupid",
+      "plot",
+      "ridicul"
+    ],
+    "positive": [
+      "perfect",
+      "great",
+      "excel",
+      "perform",
+      "enjoy",
+      "hilari",
+      "terrif",
+      "overal",
+      "life",
+      "entertain"
+    ]
+  },
+  "nearest_words": {
+    "good": [
+      "forte",
+      "lawerence",
+      "mandy",
+      "kaye's",
+      "mailed"
+    ],
+    "bad": [
+      "awesomely",
+      "guys",
+      "ahh",
+      "bandages",
+      "spate"
+    ],
+    "boring": [
+      "stupefying",
+      "disasterous",
+      "unengaging",
+      "excruciatingly",
+      "unexciting"
+    ],
+    "great": [
+      "deal",
+      "phoniness",
+      "reshooting",
+      "differ",
+      "consistent"
+    ],
+    "plot": [
+      "holes",
+      "twists",
+      "beards",
+      "heel",
+      "storyline"
+    ]
+  },
+  "vocab_size_word2vec": 23666
+}
